@@ -1,0 +1,195 @@
+Pyxform Changelog
+
+v0.11.5, 2018 07 22
+   -- Add support for SMS prefix, delimiter and tag,
+      Issue #207, https://github.com/XLSForm/pyxform/issues/207
+      [lognaturel]
+
+v0.11.4, 2018 07 10
+    -- Upgrade to ODK Validate v1.10.1
+       Issue #212, https://github.com/XLSForm/pyxform/issues/212
+       [yanokwa]
+
+v0.11.3, 2018 07 04
+    -- Set mediatype for file to application/*
+       Issue #194, https://github.com/XLSForm/pyxform/issues/194
+       [lognaturel]
+
+    -- Add support for randomizing select
+       Issue #183, https://github.com/XLSForm/pyxform/issues/183
+       [lognaturel]
+
+    -- Add max-pixels parameter for images
+       Issue #137, https://github.com/XLSForm/pyxform/issues/137
+       [lognaturel]
+
+    -- Add support for guidance hints
+       Issue #142, https://github.com/XLSForm/pyxform/issues/142
+       [lognaturel]
+
+    -- Add python versions support policy to readme
+       Issue #201, https://github.com/XLSForm/pyxform/pull/201
+       [KeynesYouDigIt]
+
+v0.11.2, 2018 04 20
+    -- Fix startupinfo flags not set properly due to misnamed variable
+       Issue #195, https://github.com/XLSForm/pyxform/pull/195
+       [yanokwa]
+
+v0.11.1, 2018 04 09
+    -- Add iana_subtags.txt to package,
+       Issue #191, https://github.com/XLSForm/pyxform/issues/191
+       [yanokwa]
+
+v0.11.0, 2018 04 05
+    -- Code cleanup, remove no-op XML formatting code
+       Issue #148, https://github.com/XLSForm/pyxform/pull/148
+       [alxndrsn]
+
+    -- Workarounds for PyInstaller on Windows
+       Issue #166, https://github.com/XLSForm/pyxform/pull/166
+       [yanokwa]
+
+    -- Add type=xml-external
+       Issue #107, https://github.com/XLSForm/pyxform/issues/107
+       [lindsay-stevens]
+
+    -- Add Enketo Validate, you can now validate XForms with Enketo's
+       form engine - https://github.com/enketo/enketo-validate.
+       Issue #163, https://github.com/XLSForm/pyxform/issues/163
+       [lindsay-stevens]
+
+    -- Added odk XML namespace xmlns:odk
+       Issue #172, https://github.com/XLSForm/pyxform/pull/172
+       [Archaejohn]
+
+    -- Error message formatting update
+       Issue #173, https://github.com/XLSForm/pyxform/pull/173
+       [yanokwa]
+
+    -- Add support for auto_send and auto_delete settings
+       Issue #126, https://github.com/XLSForm/pyxform/issues/126
+       [lognaturel]
+
+    -- Fixed Python3 unchr is not defined in pyxform/utils.py error
+       Issue #161, https://github.com/XLSForm/pyxform/issues/161
+       [shivareddyiirs]
+
+    -- Handle ODK Validate error strings with unicode
+       Issue #72, https://github.com/XLSForm/pyxform/issues/72
+       [lognaturel]
+
+    -- Error on question names with same name different cases
+       Issue #174, https://github.com/XLSForm/pyxform/issues/174
+       [moshthepitt]
+
+    -- Warn on languanges that don't have a valid IANA subtag
+       Issue #143, https://github.com/XLSForm/pyxform/issues/143
+       [lognaturel]
+
+    -- Python 3 encoding check
+       Issue #186, https://github.com/XLSForm/pyxform/pull/186
+       [pld]
+
+    -- Upgrade to ODK Validate v1.9.0
+       Issue #188, https://github.com/XLSForm/pyxform/pull/188
+       [lognaturel]
+
+v0.10.0, 2017 11 08
+    -- Add support for numeric range questions (Issue #79)
+    -- Upgrade ODK Validate 1.8.0
+    -- Support `list_name` in osm sheet (Issue #109)
+    -- Whitespace after output variables should not be trimmed (Issue #96)
+    -- Test pyxform in windows with AppVeyor CI (Issue #125)
+    -- Updated install instructions
+    -- Fix external instance URI to take the documented form of jr://file-xml/data.xml (Issue #106)
+    -- Fix validation errors with external instances (Issue #87)
+    -- Support for audit (Issue #128)
+    -- XLSForm column headers case insenstive
+    -- Add --no_pretty_xml option
+    -- Add calculate as alias for calculation column
+
+v0.9.24, 2016 10 26
+    -- ensure intent is included as an attribute to a group
+    -- update xlrd version
+    -- use built-in xml.etree rather than lxml
+    -- python 3.5 compat (py2.7 still OK), pep8, cleanup
+    -- use label for selects from file label references
+
+v0.9.23, 2016 01 11
+    -- add additional namespaces to the XForm
+    -- add support for external instances
+    -- encode question_name
+    -- We should not inject default hints into forms
+    -- new: xls2xform command line argument to skip validate
+    -- test for enclosed-area() function
+    -- ODK Validate 1.4.6
+    -- Adding support for attribute columns
+    -- pep8 indentation
+    -- include instance with reference to csv file for pulldata() calculate bindings
+    -- BSD 2-Clause License
+    -- Support writing settings attributes to first node inside instance
+    -- add type=file
+    -- [PyxformTestCase] Replacing "geo widgets"
+    -- introduce PyxformTestCase which uses markdown defined XLSForms
+    -- support osm tags
+    -- remove trailing slash from xforms namespace
+    -- fixing equivalency test (Better error message when list name = type)
+    -- Fix issue causing exponential exposure
+
+v0.9.22
+    -- Adding support for attribute columns
+    -- Update to the 1.4.4 build of ODK Validate
+    --  Adding external itemset support
+
+v0.9.21, 2014 05 08
+    -- update to ODK Validate 1.4.3
+    -- interim add of geoshape and geotrace prompts
+    -- add data preload with pulldata function
+    -- add search and select
+
+v0.9.20, 2014 01 27 -- use style column to defined body class attribute
+
+v0.9.19, 2014 01 13
+    -- add class attribute to body tag - theme support for enketo
+    -- add --json flag to output error messages in JSON format, danielfdsilva
+    -- xform2json: convert lable obj with no reference/translation to text
+    -- xform2json: set id_string from model/instance/id path
+    -- xform2json: remove comments when parsing xml file
+
+v0.9.18, 2013 06 10 -- col header warnings + adding instance flattening tag
+
+v0.9.17, 2013 04 26 -- experimental xform to json
+
+v0.9.16, 2013 04 26 -- changed sms field names
+
+v0.9.15, 2013 04 26
+    -- missing preload fields: username and email
+    -- typo fixes
+
+v0.9.14, 2013 03 27 -- add support for sms fields
+
+v0.9.13, 2013 03 26 -- remove java elements in exception during odk validate.
+
+v0.9.12, 2013 03 23
+    -- better error reporting in missing headers, missing calculations
+    -- support for rows column
+
+v0.9.11, 2013 03 20
+    -- cascade as a required field support
+    -- bind: relvant with white space ignored
+
+v0.9.10, 2013 02 15 -- bug fixes.
+
+v0.9.9.1, 2013 01 24 -- bug fix on old xls cascade format support.
+
+v0.9.9, 2013 01 22 -- InstanceId always added, new cascade format support.
+
+v0.9.8, 2012 10 12 -- Include xmlns for instances.
+
+v0.9.7, 2012 ?? ?? -- Undocumented.
+
+v0.9.6, 2012 06 21 -- Including necessary java files.
+
+v0.9.5, 2012 06 21 -- Initial PyPI release.
+
