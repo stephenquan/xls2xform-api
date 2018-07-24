@@ -5,7 +5,7 @@ xls2xform-api is a lightweight Survey123 form conversion service based on [https
 ## Downloading and prerequisites
 
 Requires Python and Java installed.
-Once installed, you need to download this repo and configure the prerequisites as follows:
+Add Python and Java to your PATH so that (python, java commands are recognized from the command prompt)
 
 1. Clone or download this repo
 2. Open a Command Prompt / Terminal / Bash window and run the following commands to configure the python prerequisites:
