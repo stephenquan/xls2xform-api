@@ -35,7 +35,7 @@ class Xls2XForm(Resource):
 
 app = Flask(__name__)
 api = Api(app)
-api.add_resource(Xls2XForm, '/api/xls2xform')
+api.add_resource(Xls2XForm, '/api/xls2xform', '/xls2xform')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5123, debug=True)
