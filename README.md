@@ -8,19 +8,26 @@ Requires Python and Java installed.
 Add Python and Java to your PATH so that (python, java commands are recognized from the command prompt)
 
 1. Install Python 3.7.0 https://www.python.org/
-   - Add Python to your PATH (could be %LOCALAPPDATA%\Programs\Python\Python37-32)
-   - Add Python scripts to your PATH (could be %LOCALAPPDATA%\Programs\Scripts\Python37-32\Scripts)
-   - Test by opening a terminal window and run: python --version (check to see if you get a response)
-   - Also test PIP: pip --version (check to see if you get a response)
+   - Windows
+     - Add Python to your PATH (could be %LOCALAPPDATA%\Programs\Python\Python37-32)
+     - Add Python scripts to your PATH (could be %LOCALAPPDATA%\Programs\Scripts\Python37-32\Scripts)
+     - Test by opening a terminal window and run: python --version (check to see if you get a response)
+     - Also test PIP: pip --version (check to see if you get a response)
+   - macOS
+     - Check Python is installed by opening a terminal window: python --version
+     - Download and install PIP:
+       - wget https://bootstrap.pypa.io/get-pip.py
+       - sudo python get-pip.py
 2. Install Oracle Java Platform JDK https://www.oracle.com/technetwork/java/javase/downloads/index.html
-   - Open a terminal window and run: Java --version (check to see if you get a response)
+   - Windows
+     - Open a terminal window and run: Java --version (check to see if you get a response)
 3. Clone or download this repo
 4. Open a Command Prompt / Terminal / Bash window and run the following commands to configure the python prerequisites:
 5. cd xls2xform-api
 6. cd pyxform
 7. python setup.py develop
 8. cd ..
-9. pip install -r requirements.txt
+9. pip install -r requirements.txt (macOS requires sudo)
 10. cd ..
 
 N.B. For macOS and Linux you may need to use `sudo` for steps 5 and 7.
