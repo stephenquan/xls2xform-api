@@ -25,12 +25,10 @@ Add Python and Java to your PATH so that (python, java commands are recognized f
 4. Open a Command Prompt / Terminal / Bash window and run the following commands to configure the python prerequisites:
 5. cd xls2xform-api
 6. cd pyxform
-7. python setup.py develop
+7. python setup.py develop (macOS and Linux requires sudo)
 8. cd ..
-9. pip install -r requirements.txt (macOS requires sudo)
+9. pip install -r requirements.txt (macOS and Linux requires sudo)
 10. cd ..
-
-N.B. For macOS and Linux you may need to use `sudo` for steps 5 and 7.
 
 ## Starting the service
 
