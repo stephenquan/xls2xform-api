@@ -40,3 +40,5 @@ Add Python and Java to your PATH so that (python, java commands are recognized f
 1. Open Survey123 Connect
 2. Use settings > Services
 3. Change Survey123 REST API Url to: http://localhost:5123/api
+4. When Publishing your form, "Create web form" is not currently supported, so, you must disable it in the Publish Survey > Options
+
