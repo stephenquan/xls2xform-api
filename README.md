@@ -10,7 +10,7 @@ Add Python and Java to your PATH so that (python, java commands are recognized f
 1. Install Python 3.7.0 https://www.python.org/
    - Windows
      - Add Python to your PATH (could be %LOCALAPPDATA%\Programs\Python\Python37-32)
-     - Add Python scripts to your PATH (could be %LOCALAPPDATA%\Programs\Scripts\Python\Python37-32\Scripts)
+     - Add Python scripts to your PATH (could be %LOCALAPPDATA%\Programs\Python\Python37-32\Scripts)
      - Test by opening a terminal window and run: python --version (check to see if you get a response)
      - Also test PIP: pip --version (check to see if you get a response)
    - macOS
